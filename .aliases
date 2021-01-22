@@ -1,0 +1,24 @@
+# Simplify sudo
+alias _='sudo '
+
+# dd added status to default
+alias dd='dd status=progress'
+
+# Disk Usage shortcuts
+alias du='du -h'
+alias du1='du --max-depth=1'
+alias du2='du --max-depth=2'
+alias du3='du --max-depth=3'
+
+# Pattern Searches
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+
+# Directory listing changes
+alias l='ls -al'
+alias la='ls -A'
+alias ll='ls -l'
+alias ls='ls -h --color=auto --file-type'
+
+# less - change default to add -R
+alias less='less -R'
