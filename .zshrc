@@ -1,6 +1,11 @@
 ## RC zshrc file
 
-export RC_VERSION="1.0.0"
+# Skip all this for non-interactive shells
+[[ -z "$PS1" ]] && return
+
+export RC_ZSHRC_VERSION="1.0.0"
+
+neofetch
 
 ###############################################################################
 ### Aliases ###################################################################
