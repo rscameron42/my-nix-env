@@ -3,7 +3,7 @@
 # add added status to default
 alias dd='dd status=progress'
 
-aliad diff='diff --color=auto'
+alias diff='diff --color=auto'
 alias ip='ip --color=auto'
 
 # Directory listing base for Linux
