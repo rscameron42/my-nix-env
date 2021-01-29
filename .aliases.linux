@@ -1,0 +1,10 @@
+### Aliases for Linux
+
+# add added status to default
+alias dd='dd status=progress'
+
+aliad diff='diff --color=auto'
+alias ip='ip --color=auto'
+
+# Directory listing base for Linux
+alias ls='ls -h --color=auto --file-type'

@@ -1,0 +1,4 @@
+### Aliases for OSX
+
+# Directory listing base for OSX
+alias ls='ls -hGF'

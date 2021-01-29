@@ -4,7 +4,7 @@
 # Once backed up to {file}.dtbak symlink the new dotfile in place
 for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
     if [ -e ~/$file ]; then
-        mv -f ~/$file{,.dtbak}
+        mv -f ~/$file{,.mnebak}
     fi
     ln -s $PWD/$file ~/$file
 done
