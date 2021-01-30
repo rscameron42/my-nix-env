@@ -16,6 +16,8 @@ TODO: move the following to 'version history'/'roadmap' files
 ### Download and change folder
 ```
 cd ~
+git clone git@github.com:rscameron42/my-nix-env.git
+-or-
 git clone https://github.com/rscameron42/my-nix-env.git
 
 cd my-nix-env
