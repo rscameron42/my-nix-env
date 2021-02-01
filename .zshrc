@@ -3,10 +3,23 @@
 # Skip all this for non-interactive shells
 [[ -z "$PS1" ]] && return
 
-export RC_ZSHRC_VERSION="1.0.0"
-export CLICOLOR=1
+export RC_ZSHRC_VERSION="1.0.1"
+# Color output on Mac OSexport CLICOLOR=1
 os="`uname | tr '[:upper:]' '[:lower:]'`"
 neofetch
+
+###############################################################################
+### History ###################################################################
+###############################################################################
+HISTORY_IGNORE="(ls|[bf]g|exit|reset|clear|cd|cd ..|cd..)"
+HISTSIZE=25000
+HISTFILE=~/.zsh_history
+SAVEHIST=100000
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
 
 ###############################################################################
 ### Aliases ###################################################################
