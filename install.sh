@@ -4,10 +4,10 @@
 # Once backed up to {file}.mnebak symlink the new dotfile in place
 #for file in $(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n" ); do
 for file in $(find . -maxdepth 1 -name ".*" -type f  | sed s/".\/"// ); do
-    if [ -e ~/$file ]; then
+    if [ -f ~/$file -a ! -h ~/$file ]; then
         mv -f ~/$file{,.mnebak}
     fi
-    ln -s $PWD/$file ~/$file
+    ln -sf $PWD/$file ~/$file
 done
 
 
