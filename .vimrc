@@ -9,6 +9,12 @@ set encoding=utf-8
 
 " Show line numbers
 set number
+set relativenumber
 
 " Status bar
 set laststatus=2
+
+" Tabstop
+set tabstop=4 softtabstop=4
+
+set colorcolumn=80
