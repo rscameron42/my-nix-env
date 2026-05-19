@@ -6,7 +6,7 @@
 export RC_ZSHRC_VERSION="1.0.1"
 # Color output on Mac OSexport CLICOLOR=1
 os="`uname | tr '[:upper:]' '[:lower:]'`"
-neofetch
+fastfetch
 
 ###############################################################################
 ### History ###################################################################
